@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+  <title>Our Services - JCEWeb</title>
+</head>
+<body>
+  <!-- Navbar -->
+  <div class="navbar" id="myNavbar">
+    <a href="index.html" class="logo"><img src="logo.jpeg" alt="JCEWeb Logo"></a>
+    <div class="nav-items">
+      <a href="index.html">Home</a>
+      <a href="services.html" class="active">Services</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <a href="javascript:void(0);" class="icon" onclick="toggleNavbar()">
+      &#9776;
+    </a>
+  </div>
+
+  <div class="dropdown-content" id="dropdownContent">
+    <a href="index.html">Home</a>
+    <a href="services.html" class="active">Services</a>
+    <a href="portfolio.html">Portfolio</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+
+
+  <section class="intro-section">
+    <div class="intro-content">
+        <h1>Our Services</span></h1>
+        <p>At JCEWeb, we offer a range of services to help you create a powerful online presence. Whether you need a new website, a redesign, or digital marketing services, we have you covered.</p>
+      </p>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section class="services-section">
+    <div class="service-card">
+      <img src="WebDesignGraphic.png" alt="Website Design Image" class="service-image">
+      <div class="service-content">
+        <h2>Website Design & Development</h2>
+        <p>
+          Our dedicated team is passionate about designing and developing custom websites tailored to your business needs. We focus on creating user-friendly, responsive, and SEO-optimized sites to help you stand out online. Let us bring your vision to life with creativity and attention to detail.
+        <h3>Pricing:</h3>
+        <p>Starting at £600</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="Services-Contact">
+    <div class="Contact-content">
+        <h1>Caught Your <span class="highlight">Interest?</span></h1>
+        <p>Feel free to contact us, we're available anytime!</p>
+        <a href="contact.html" class="start-project-btn" >Contact Us</a>
+    </div>
+  </section>
+
+  <footer class="larger-footer">
+    <div class="footer-container">
+      <img src="logo.jpeg" alt="JCEWeb Logo" class="footer-logo">
+      <!-- Page Links -->
+      <div class="footer-section">
+        <h3>Site Map</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <!-- Social Media Links -->
+      <div class="footer-section">
+        <h3>Connect with Us</h3>
+        <ul>
+          <li><a href="https://instagram.com">Instagram</a></li>
+        </ul>
+      </div>
+      <!-- Contact Information -->
+      <div class="footer-section">
+        <h3>Contact Information</h3>
+        <p>Email: <a href="mailto:JCEWebsites@gmail.com">JCEWebsites@gmail.com</a></p>
+        <p>Phone: (123) 456-7890</p>
+      </div>
+    </div>
+    <!-- Additional Footer Information -->
+    <div class="footer-bottom">
+      <p>&copy; 2024. JCEWeb. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    function toggleNavbar() {
+      var x = document.getElementById("dropdownContent");
+      if (x.style.maxHeight) {
+        x.style.maxHeight = null;
+      } else {
+        x.style.maxHeight = x.scrollHeight + "px";
+      }
+    }
+  </script>
+</body>
+</html>
