@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+  <title>JCEWeb - Portfolio</title>
+</head>
+<body>
+  <div class="navbar" id="myNavbar">
+    <a href="index.html" class="logo"><img src="logo.jpeg" alt="JCEWeb Logo"></a>
+    <div class="nav-items">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="portfolio.html" class="active">Portfolio</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <a href="javascript:void(0);" class="icon" onclick="toggleNavbar()">
+      &#9776;
+    </a>
+  </div>
+
+  <div class="dropdown-content" id="dropdownContent">
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="portfolio.html" class="active">Portfolio</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <section class="portfolio">
+    <h1>Our <span class="highlight">Portfolio</span></h1>
+    <div class="portfolio-container">
+      <a href="https://joncodea.github.io/PloughWebsite/" target="_blank" class="portfolio-item" data-title="Project 1">
+        <img src="PortfolioImage1.png" alt="Project 1">
+      </a>
+      <a href="https://joncodea.github.io/PortfolioWebsite/" target="_blank" class="portfolio-item" data-title="Project 2">
+        <img src="PortfolioImage2.png" alt="Project 2">
+      </a>
+      <a href="index.html" target="_blank" class="portfolio-item" data-title="Project 3">
+        <img src="PortfolioImage3.png" alt="Project 3">
+      </a>
+      <!-- Add more portfolio items as needed -->
+    </div>
+  </section>
+
+  <footer class="larger-footer">
+    <div class="footer-container">
+      <img src="logo.jpeg"  alt="JCEWeb Logo" class="footer-logo">
+      
+      <!-- Page Links -->
+      <div class="footer-section">
+        <h3>Site Map</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="Portfolio.html">Portfolio</a></li>
+        </ul>
+      </div>
+  
+      <!-- Social Media Links -->
+      <div class="footer-section">
+        <h3>Connect with Us</h3>
+        <ul>
+          <li><a href="https://instagram.com">Instagram</a></li>
+          <!-- Add more social media if needed -->
+        </ul>
+      </div>
+  
+      <!-- Contact Information -->
+      <div class="footer-section">
+        <h3>Contact Information</h3>
+        <p>Email: <a href="mailto:JCEWebsites@gmail.com">JCEWebsites@gmail.com</a></p>
+        <p>Phone: (123) 456-7890</p>
+      
+      </div>
+    </div>
+  
+    <!-- Additional Footer Information -->
+    <div class="footer-bottom">
+      <p>&copy; 2024. JCEWebsite. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    function toggleNavbar() {
+      var x = document.getElementById("dropdownContent");
+      if (x.style.maxHeight) {
+        x.style.maxHeight = null;
+      } else {
+        x.style.maxHeight = x.scrollHeight + "px";
+      }
+    }
+  </script>
+</body>
+</html>

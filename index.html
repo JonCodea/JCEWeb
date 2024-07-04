@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+  <title>JCEWeb</title>
+</head>
+<body>
+  <div class="navbar" id="myNavbar">
+    <a href="index.html" class="logo"><img src="logo.jpeg" alt="JCEWeb Logo"></a>
+    <div class="nav-items">
+      <a href="index.html" class="active">Home</a>
+      <a href="services.html">Services</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="contact.html">Contact</a>
+      
+    </div>
+    <a href="javascript:void(0);" class="icon" onclick="toggleNavbar()">
+      &#9776;
+    </a>
+  </div>
+
+  <div class="dropdown-content" id="dropdownContent">
+    <a href="index.html" class="active">Home</a>
+    <a href="services.html">Services</a>
+    <a href="portfolio.html">Portfolio</a>
+    <a href="contact.html">Contact</a>
+    
+    
+  </div>
+
+  <section class="hero">
+    <div class="hero-content">
+        <h1>Crafting Digital <span class="highlight">Spaces</span></h1>
+        <p>Let us elevate your online presence</p>
+        <a href="services.html" class="start-project-btn" >See Our Services</a>
+    </div>
+    <div class="hero-image">
+        <img src="LaptopGraphic.jpg" alt="Man on Laptop">
+    </div>
+</section>
+
+
+
+
+  <section class="Portfolio-highlights">
+    <div class="highlight-image">
+      <img src="JustLaptopGraphic.jpg" alt="Man on Laptop">
+   </div>
+    <div class="highlight-content">
+        <h1>Our <span class="highlight">Portfolio</span></h1>
+        <p>Have a look at our portfolio</p>
+        <a href="portfolio.html" class="start-project-btn" >Portfolio</a>
+    </div>
+
+  </section>
+
+
+
+
+
+
+  <section class="reviews-section">
+    <div class="review-section-text">
+      <h1> See Our <span class="highlight">Happy</span> Customers</h1>
+    </div>
+    <div class="review-cards">
+      <div class="review-card">
+        <div class="rating">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p class="review-text">Our experience with this company has been exceptional.</p>
+        <div class="review-author">
+          <img src="placeholder.jfif" alt="Avatar">
+          <span class="name">John Doe</span>
+          <span class="position">CEO, ABC Company</span>
+        </div>
+      </div>
+      <div class="review-card">
+        <div class="rating">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p class="review-text">Our experience with this company has been exceptional.</p>
+        <div class="review-author">
+          <img src="placeholder.jfif" alt="Avatar">
+          <span class="name">John Doe</span>
+          <span class="position">CEO, ABC Company</span>
+        </div>
+      </div>
+      <div class="review-card">
+        <div class="rating">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p class="review-text">Our experience with this company has been exceptional.</p>
+        <div class="review-author">
+          <img src="placeholder.jfif" alt="Avatar">
+          <span class="name">John Doe</span>
+          <span class="position">CEO, ABC Company</span>
+        </div>
+      </div>
+      <!-- Repeat for other review cards -->
+    </div>
+  </section>
+  
+  
+
+  <section class="index-Contact">
+    <div class="Contact-content">
+        <h1>Caught Your <span class="highlight">Interest?</span></h1>
+        <p>Feel free to contact us, we're available anytime!</p>
+        <a href="contact.html" class="start-project-btn" >Contact Us</a>
+    </div>
+  </section>
+
+  <footer class="larger-footer">
+    <div class="footer-container">
+      <img src="logo.jpeg"  alt="JCEWeb Logo" class="footer-logo">
+      
+      <!-- Page Links -->
+      <div class="footer-section">
+        <h3>Site Map</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="Portfolio.html">Portfolio</a></li>
+        </ul>
+      </div>
+  
+      <!-- Social Media Links -->
+      <div class="footer-section">
+        <h3>Connect with Us</h3>
+        <ul>
+          <li><a href="https://instagram.com">Instagram</a></li>
+          <!-- Add more social media if needed -->
+        </ul>
+      </div>
+  
+      <!-- Contact Information -->
+      <div class="footer-section">
+        <h3>Contact Information</h3>
+        <p>Email: <a href="mailto:JCEWebsites@gmail.com">JCEWebsites@gmail.com</a></p>
+        <p>Phone: (123) 456-7890</p>
+      
+      </div>
+    </div>
+  
+    <!-- Additional Footer Information -->
+    <div class="footer-bottom">
+      <p>&copy; 2024. JCEWebsite. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    function toggleNavbar() {
+      var x = document.getElementById("dropdownContent");
+      if (x.style.maxHeight) {
+        x.style.maxHeight = null;
+      } else {
+        x.style.maxHeight = x.scrollHeight + "px";
+      }
+    }
+  </script>
+</body>
+</html>
