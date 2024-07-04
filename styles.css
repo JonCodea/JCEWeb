@@ -72,8 +72,8 @@
 	width: 100%;
 	overflow: hidden;
 	transition: max-height 0.3s ease-out;
-	border-bottom-left-radius: 10px;
-	border-bottom-right-radius: 10px ;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px ;
   }
   
   .dropdown-content a {
@@ -480,9 +480,9 @@ p {
 	flex-direction: column;
 	align-items: center;
 	padding: 20px;
-    	opacity: 0;
+    opacity: 0;
   	animation: fadeIn 0.6s ease-out forwards;
-	margin-bottom: 100px;
+	background-color: rgb(233, 235, 248);
 }
 
 @keyframes fadeIn {
@@ -493,9 +493,11 @@ p {
   
   .portfolio h1 {
 	text-align: center;
-	margin-bottom: 20px;
+	margin-top: 5%;
+	margin-bottom: 10%;
 	font-size: clamp(1.5rem, 5vw, 2.5rem);
 	color: rgb(22, 27, 51);
+	
   }
   
   .portfolio-container {
@@ -552,6 +554,10 @@ p {
   
   /* Media Queries for Responsiveness */
   @media (max-width: 1024px) {
+
+	.portfolio{
+		height: 130vh;
+	}
 	.portfolio-item {
 	  width: calc(50% - 40px); /* Adjusted width for tablets */
 	}
@@ -750,6 +756,7 @@ p {
 	font-size: 18px; 
 	color: white; 
 	text-shadow:#000;
+	font-weight: bolder;
   }
 
   .footer-section ul {
@@ -764,12 +771,12 @@ p {
   }
 
   .footer-section a {
-	color: rgb(113, 90, 255); 
+	color: white; 
 	text-decoration: none; 
   }
 
   .footer-section p {
-	color: rgb(113, 90, 255); 
+	color: white; 
 	margin-top: 10px; 
 	margin-bottom: 10px;
   }
@@ -837,4 +844,101 @@ p {
 	}
 
   }
+  /* Add this if not already in styles.css */
+
+/* Services Section */
+.services-section {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 20px;
+	justify-content: center;
+	padding: 60px 20px;
+	background-color: #f4f4f4;
+	height: 150vh;
+  }
   
+  .intro-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(233, 235, 248);
+    color: black;
+    padding: 2rem;
+	
+	
+}
+
+.intro-content {
+    max-width: 600px;
+	margin-left: 50px;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+  
+  .service-card {
+	background: #fff;
+	border: 1px solid #ddd;
+	border-radius: 10px;
+	overflow: hidden;
+	width: 100%;
+	max-width: 400px;
+	text-align: left;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+	transition: transform 0.3s;
+  }
+  
+  .service-card:hover {
+	transform: translateY(-10px);
+  }
+  
+  .service-image {
+	width: 100%;
+	height: auto;
+	align-self: center;
+  }
+  
+  .service-content {
+	padding: 20px;
+	line-height: 1.5;
+  }
+  
+  .service-content h2 {
+	font-size: 1.5rem;
+	margin-bottom: 10px;
+	text-align: center;
+  }
+  
+  .service-content p {
+	font-size: 1rem;
+	margin-bottom: 10px;
+  }
+  
+  .service-content ul {
+	list-style-type: none;
+	padding: 0;
+  }
+  
+  .service-content ul li {
+	font-size: 1rem;
+	margin-bottom: 5px;
+  }
+  
+  .service-content h3 {
+	font-size: 1.2rem;
+	margin-top: 10px;
+  }
+  
+
+  
+  .Services-Contact{
+	background-color: rgb(233, 235, 248)
+  }
